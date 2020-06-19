@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: black;
+    color: #fff;
+}
+
+#page-contando{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#page-contando header{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 24px;
+    align-items: center;
+    color: #21EB00;
+}
+#page-contando main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-height: 700px;
+    align-items: center;
+}
+#page-contando header h1{
+    font-size: 54px;
+}
+
+#page-contando header a{
+    background-color: #21EB00;
+    padding: 13px 42px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #000;
+    font-weight: 700;
+    border-radius: 16px;
+    transition: 400ms;
+}
+#page-contando header a:hover{
+    background-color: #166809;
+}
+
+#page-contando main h1#texto1{
+    margin-top: 24px;
+    text-align: center;
+    font-size: 100px;
+    color: #191A18;
+}
+#page-contando main div.conteiner{
+    display: flex;
+    margin-top: 40px;
+    width: 80%;
+
+}
+
+#page-contando div.grid{
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#page-contando div.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#page-contando div.item h1{
+    font-size: 120px;
+}
+
+#page-contando div.item span{
+    color: #21EB00;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.model{
+    max-width: 500px;
+    width: 100%;
+    max-height: 600px;
+    height: 50vh;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #096819;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+.model h1{
+    text-transform: uppercase;
+    margin: 20px;
+    font-size: 40px;
+    
+}
+.model h2{
+    margin: 20px;
+    text-align: justify;
+    width: 70%;
+}
+.model h2 span{
+    text-decoration: underline;
+
+}
+
+.model a{
+    margin: 20px;
+    width: 40%;
+    padding: 16px 24px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    transition: 400ms;
+}
+
+.model a:hover{
+    background-color: rgb(255, 255, 255);
+    color: #000;
+
+    font-weight: 700;
+}
+
+.hide{
+    opacity: 0;
+}
